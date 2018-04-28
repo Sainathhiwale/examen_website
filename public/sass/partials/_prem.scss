@@ -1,0 +1,90 @@
+
+/*---------------scroll to top--------------*/
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99999999;
+    background-color: $theme;
+    color: #eeeeee;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    right: 22px;
+    bottom: 22px;
+    padding-bottom: 2px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+    opacity: 0.9 !important;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+    line-height: inherit;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: $theme;
+    color: #fff;
+}
+
+::selection {
+    text-shadow: none;
+    background: $theme;
+    color: #fff;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+
+/*----------Sticky Header-------------*/
+  .logo-menu.sticky{
+            top: 0 !important;
+            position: fixed;
+            bottom: auto;
+            margin: 0 auto !important;
+            z-index: 9999;  
+            background: $theme1;
+            transition:all 1.5s ease-in-out; 
+        }
+        .logo-menu.sticky .navbar-nav>li>a{
+          padding: 21px 22px;
+          
+          @media(max-width: 991px){
+            padding:25px 20px;
+          }
+        }
+        .logo-menu.sticky .logo{
+        	padding: 2px 0 !important;
+        }
+        .logo-menu.sticky .logo img{
+        	max-width: 175px;
+            padding: 3px 0;
+        }
+    @media(max-width:767px){
+        .sticky .navbar-nav>li>a{
+            padding: 10px 15px !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }

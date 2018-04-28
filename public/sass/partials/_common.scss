@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+p{
+	line-height: 24px;
+}
+.clear-both{
+	padding-right: 0;
+	padding-left: 0;
+}
+.section-title{
+	text-align: center;
+	.underline{
+		max-width: 100px;
+		height: 2px;
+		background: $theme;
+		margin: 0 auto;
+	}
+}
+.btn-theme{
+	background: $theme;
+	border-color:$theme;
+	color: #fff;
+	padding: 10px 16px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	&:hover{
+		opacity:0.8;
+		color: #fff;
+	}
+}
